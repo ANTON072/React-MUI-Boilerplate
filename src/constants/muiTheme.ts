@@ -21,6 +21,9 @@ const muiTheme = createMuiTheme(
       },
     },
     props: {
+      MuiFormControl: {
+        variant: "outlined",
+      },
       MuiTextField: {
         // テキストフィールドのデフォルトスタイルの設定
         variant: "outlined",
@@ -48,7 +51,7 @@ const muiTheme = createMuiTheme(
       // テーマカラーの設定
       primary: {
         // mainのみの指定でlightやdarkは自動設定
-        main: blue["500"],
+        main: blue["700"],
       },
     },
     mixins: {

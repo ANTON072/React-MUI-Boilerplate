@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction } from "@reduxjs/toolkit"
 import { Action, combineReducers } from "redux"
 import counterSlice from "./slices/counterSlice"
+import userSlice from "./slices/userSlice"
 
 /** SliceをまとめてひとつのReducerにする */
 const reducer = combineReducers({
+  user: userSlice,
   counter: counterSlice,
 })
 
